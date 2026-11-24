@@ -17,6 +17,6 @@ test('Login successfully with valid credentials', async ({ page }) => {
   await expect(page).toHaveURL(/secure/);
 
   await expect(page.locator('#flash'))
-    .toContainText('You logged into a secure area!');
+  .toContainText('Login completed successfully!');
 
 });
